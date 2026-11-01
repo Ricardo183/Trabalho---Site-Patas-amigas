@@ -1,0 +1,243 @@
+/* Configurações Gerais */
+body {
+    font-family: Arial, "Helvetica Neue", sans-serif; /* requisito */
+    font-weight: 550;
+    color: #1d1148; /* requisito */
+    background-color: #f7f7f9; /* requisito */
+    line-height: 1.6; /* requisito */
+    box-sizing: border-box;
+}
+
+/* Configurações do Navbar */
+.navbar {
+    max-width: 1000px; /* requisito */
+    margin: 0 auto; /* requisito */
+    display: flex; /* requisito */
+    background-color: white;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.logo-text {
+    justify-content: left;
+    font-size: 24px;
+}
+
+.logo-text span {
+    color: #e40084; /* requisito */
+}
+
+.nav-links{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    font-family: inherit;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #b8006a; /* extra */
+}
+
+/* Configurações do Destaque */
+.destaque {
+    text-align: center; /* requisito */
+    margin-left: -10px; /* ajuste para ficar igual ao design */
+    color: white; /* requisito */
+    background-color: #1d1148; /* requisito */
+    padding: 15px 0px 60px 0px;
+}
+
+.destaque h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.destaque p {
+    max-width: 560px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 auto 40px;
+}
+
+.btn {
+    color: white;
+    background-color: #e40084; /* requisito */
+    text-decoration: none;
+    font-weight: 500;
+    padding: 13px 25px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+.btn:hover {
+    color: #b8006a; /* extra */
+}
+
+/* Configurações da secção Animais */
+.animais {
+    max-width: 1000px; /* requisito */
+    padding-top: 25px;
+    margin: 0 auto; /* requisito */
+}
+
+.animal-container {
+    display: flex; /* requisito */
+    flex-wrap: wrap; /* requisito */
+    justify-content: center;
+    gap: 24px; /* requisito */
+}
+
+.animal-card {
+    position: relative; /* extra */
+    box-sizing: border-box; /* requisito */
+    width: 300px; /* requisito */
+    border: 3px solid #1d1148; /* requisito */
+    padding: 16px; /* requisito */
+    border-radius: 20px; /* requisito */
+    text-align: center;
+    box-shadow: 5px 10px lightgrey; 
+}
+
+.animal-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.animal-card p {
+    font-weight: 500;
+}
+
+.animal-img {
+    width: 262px;
+    border-radius: 15px;
+}
+
+.animal-card span {
+    position: absolute; /* extra */
+    top: 20px;
+    right: 20px;
+    background-color: #e40084;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 11px;
+}
+
+/* Configurações da secção Adotar */
+.adotar {
+    max-width: 1000px; /* requisito */
+    padding-top: 25px;
+    margin: 0 auto; /* requisito */
+}
+
+.adotar ol {
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.adotar li {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Configurações da secção Visitas */
+.visitas {
+    max-width: 1000px; /* requisito */
+    padding-top: 25px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    max-width: 500px; /* requisito */
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th {
+    background-color: #1d1148; /* requisito */
+    color: white;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid lightgrey; /* requisito */
+    font-weight: 500;
+}
+
+/* Configurações da secção Contacto */
+.contacto {
+    max-width: 1000px;
+    padding-top: 25px;
+    margin: 0 auto;
+}
+
+.contacto form {
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 15px; /* requisito */
+    max-width: 500px;
+    width: 100%;
+    padding: 25px;
+    box-shadow: 0 5px 10px lightgrey;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contacto input,
+.contacto select,
+.contacto textarea {
+    width: 100%; /* requisito */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid grey;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.contacto input,
+.contacto textarea {
+    max-width: 428px; /* ajuste para ficar igual ao design */
+}
+
+.contacto select {
+    background-color: rgb(211, 211, 211);
+}
+
+.contacto button {
+    background-color: #e40084; /* requisito */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 11px 22px;
+    align-self: flex-start;
+}
+
+.contacto button:hover {
+    color: #b8006a; /* extra */
+}
+
+/* Configurações do Footer */
+footer {
+    margin-top: 50px;
+    margin-left: -10px; /* ajuste para ficar igual ao design */
+    color: white; /* requisito */
+    background-color: #1d1148; /* requisito */
+    text-align: center; /* requisito */
+    padding: 12px;
+}
